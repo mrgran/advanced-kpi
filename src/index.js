@@ -4,8 +4,11 @@ import initialProperties from './initial-properties.js';
 import template from './template.html';
 import definition from './definition.js';
 import controller from './controller.js';
+import './climber-icons.css';
+import './style.scss';
+
 // eslint-disable-next-line no-unused-vars
-import localCSS from './style.css';
+//import localCSS from './style.css';
 
 export default {
   initialProperties: initialProperties,

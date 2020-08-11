@@ -1,4 +1,10 @@
-<!-- adv-kpi-intro -->
+<head>
+    <link rel="stylesheet" href="node_modules/leonardo-ui/dist/leonardo-ui.css" type="text/css"/>
+    <link href='../extensions/advanced-kpi/fonts/climbericons.woff' rel='stylesheet' type='text/css'/>
+    <link href='../extensions/advanced-kpi/fonts/climbericons.eot' rel='stylesheet' type='text/css'/>
+    <link href='../extensions/advanced-kpi/fonts/climbericons.svg' rel='stylesheet' type='text/css'/>
+
+</head><!-- adv-kpi-intro -->
 <div qv-requirements="" ng-if="init" class="requirements-wrapper">
     <div class="requirements">
         <h2 class="header"><i class="object-icon  lui-icon  lui-icon--kpi"></i></h2>
@@ -27,14 +33,14 @@
                 ng-style="{'font-family' : layout.prop.measure1.kpi.font , 'font-size' : layout.prop.measure1.kpi.size , 'font-weight' : layout.prop.measure1.kpi.bold , 'font-style' : layout.prop.measure1.kpi.italic , 'text-decoration' : layout.prop.measure1.kpi.underline , 'color' : layout.prop.measure1.kpi.color.color}">
                 <div class="adv-kpi-trend-a" ng-class="[layout.prop.measure1.trend.icon]"
                     ng-if="layout.prop.measure1.trend.side == 'left' && layout.prop.measure1.trend.switch == true">
-                    <span class="lui-icon lui-icon--{{layout.prop.measure1.trend.icon}}"
+                    <span class="cl-icon cl-icon-{{layout.prop.measure1.trend.icon}}"
                         ng-style="{'color' : layout.prop.measure1.trend.color, 'font-size' : layout.prop.measure1.trend.size}"
                         aria-hidden="true"></span>
                 </div>
                 {{layout.prop.measure1.fx}}
                 <div class="adv-kpi-trend-b"
                     ng-if="layout.prop.measure1.trend.side == 'right' && layout.prop.measure1.trend.switch == true">
-                    <span class="lui-icon lui-icon--{{layout.prop.measure1.trend.icon}}"
+                    <span class="cl-icon cl-icon-{{layout.prop.measure1.trend.icon}}"
                         ng-style="{'color' : layout.prop.measure1.trend.color, 'font-size' : layout.prop.measure1.trend.size}"
                         aria-hidden="true"></span>
                 </div>
@@ -55,7 +61,7 @@
                 {{layout.prop.measure2.fx}}
                 <div class="adv-kpi-trend-b"
                     ng-if="layout.prop.measure2.trend.switch == true">
-                    <span class="lui-icon lui-icon--{{layout.prop.measure2.trend.icon}}"
+                    <span class="cl-icon cl-icon-{{layout.prop.measure2.trend.icon}}"
                         ng-style="{'color' : layout.prop.measure2.trend.color, 'font-size' : layout.prop.measure2.trend.size}"
                         aria-hidden="true"></span>
                 </div>

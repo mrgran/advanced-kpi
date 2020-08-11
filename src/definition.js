@@ -236,7 +236,7 @@ define(['qlik'], function (qlik, utils) {
     ref: "prop.measure1.trend.icon",
     label: "Icon",
     expression: "optional",
-    defaultValue: "triangle-top",
+    defaultValue: "meter",
     show: function (data) {
       if (data.prop.measure1.trend.switch) { return true; }
     }

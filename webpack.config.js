@@ -57,9 +57,39 @@ const config = {
         test: /\.html$/,
         loader: "html-loader"
       },
+     
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.scss$/,
+        use: ['style-loader','css-loader','sass-loader']
+      },
+      
+      /* { 
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'assets/fonts/'
+      }},
+ */
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            //include: path.resolve(__dirname, '../')
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/fonts/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.css$/i,
+        loader:  'css-loader',
+        options: {
+          url: false,
+        }
       }
     ]
   },
